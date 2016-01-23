@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/GetValueJmpEffects_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/BT_View1"
+        android:gravity = "bottom|right"
+        android:textSize ="30sp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnBT"
+        android:layout_width="33dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/GetValueJmpEffects_btn"
+        android:layout_marginLeft="2dp"
+        android:background="@drawable/blue2"
+        android:enabled="false" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/btnExit"
+        android:layout_toRightOf="@+id/BT_View1"
+        android:text="Search" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnDis"
+        android:layout_alignBottom="@+id/btnDis"
+        android:layout_toRightOf="@+id/btnDis"
+        android:text="get"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/GetValueJmpEffects_btn"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+    <ListView
+        android:id="@+id/lvDevices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/BT_View1" >
+
+    </ListView>
+
+    <ToggleButton
+        android:id="@+id/tbtnSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnSend"
+        android:layout_toRightOf="@+id/btnSend"
+        android:text="tbtnSwitch"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnDis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="36dp"
+        android:text="btnDis"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnSearch"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Exit" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnExit"
+        android:layout_alignParentBottom="true"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/BT_View1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/btnDis"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="bluetooth:"
+        android:textSize="20sp" />
+
+</RelativeLayout>
